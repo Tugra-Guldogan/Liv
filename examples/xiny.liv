@@ -1,0 +1,36 @@
+# a comment looks like this
+
+## a multi-line comment
+looks like this ##
+
+?[strict] # `?[]` are compiler commands, this one signifies to use strict mode
+?[nostrict] # turning off strict mode
+
+var fourtwo: int = 42
+const text = "yup" # variables types can be inferred
+
+if text == "yup" {
+    put("text is yup")
+} else {
+    ?[throw "text is not yup"] # throwing errors
+}
+
+const me: obj = {
+    const name = "baran" # public key
+    const \weight = 150 # private key
+}
+
+const hello: obj = (name: str){ # functions are objects too
+    const \greeting = "hello " # private data is denoted with a `\`
+    put(greeting + name)
+}
+
+hello(me.name)
+
+op (x: int) ^ (y: int){ # operators can be defined like this
+    var \cur = x
+    loop y {
+        cur = cur * y
+    }
+    return cur
+}
