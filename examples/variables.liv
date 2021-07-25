@@ -1,0 +1,9 @@
+package main
+
+import 'fmt'
+
+function main () {
+
+// HOW TO DEFINE VARIABLES
+
+var varname = 'variable'
