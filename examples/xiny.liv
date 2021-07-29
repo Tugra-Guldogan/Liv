@@ -16,7 +16,7 @@ if text == "yup" {
 }
 
 const me: obj = {
-    const name = "baran" # public key
+    const name = "Tuğra" # public key
     const \weight = 150 # private key
 }
 
